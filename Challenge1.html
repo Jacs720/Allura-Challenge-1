@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+   <div>
+	<img src="C:\Users\60086503\OneDrive - Tenaris\Documentos\Programación\Challenge1/Logo.png">
+   </div>
+<textarea id="frase" placeholder="Ingrese su texto aquí"></textarea>
+<div class="rectangulo"></div>
+<textarea id="resultado" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+
+ <div class="botones">
+<button id="botonEncriptar" class="boton">Encriptar</button>
+<button id="botonDesencriptar" class="boton">Desencriptar</button>
+<button id="botonCopiar" class="boton">Copiar</button>
+</div>
+
+
+</body>
+<script>
+	const llaves = {
+	    'e': 'enter',
+	    'i': 'imes',
+	    'a': 'ai',
+	    'o': 'ober',
+	    'u': 'ufat'
+	};
+
+	function encriptar(frase) {
+	    let fraseEncriptada = frase;
+	    for (const [letraOriginal, letraNueva] of Object.entries(llaves)) {
+        	fraseEncriptada = fraseEncriptada.split(letraOriginal).join(letraNueva);
+	    }
+	    return fraseEncriptada;
+	}
+
+	function desencriptar(frase) {
+	    let fraseDesencriptada = frase;
+	    for (const [letraOriginal, letraNueva] of Object.entries(llaves)) {
+        	fraseDesencriptada = fraseDesencriptada.split(letraNueva).join(letraOriginal);
+	    }
+	    return fraseDesencriptada;
+	}
+	
+	var frase = document.querySelector("#frase");
+	frase.focus();
+	frase.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+});
+
+	var botonEncriptar = document.querySelector("#botonEncriptar");
+	botonEncriptar.onclick = function() {
+        var resultado = document.querySelector("#resultado");
+        resultado.value = encriptar(frase.value);
+	document.querySelector("#botonCopiar").style.display = 'block';
+    };
+
+    var botonDesencriptar = document.querySelector("#botonDesencriptar");
+	botonDesencriptar.onclick = function() {
+        var resultado = document.querySelector("#resultado");
+        resultado.value = desencriptar(frase.value);
+	document.querySelector("#botonCopiar").style.display = 'block';
+    };
+
+ document.getElementById("botonCopiar").addEventListener("click", function() {
+      var resultado = document.getElementById("resultado");
+      resultado.select();
+      document.execCommand("copy");
+    });
+
+
+</script>

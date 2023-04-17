@@ -1,0 +1,107 @@
+body {
+    background-color:#EFF1FA;
+}
+
+#logo {
+    text-align: center;
+}
+
+#frase {
+
+position: absolute;
+width: 680px;
+height: auto;
+max-height:500px;
+left: 240px;
+top: 168px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color: #0A3871;
+border:none;
+background: #EFF1FA;
+}
+
+#resultado {
+
+position: absolute;
+width: 336px;
+height: autopx;
+max-height: 700px;
+left: 1032px;
+top: 72px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+color: #495057;
+border: none;
+word-wrap: break-word;
+}
+
+.rectangulo {
+position: absolute;
+width: 400px;
+height: 880px;
+left: 1000px;
+top: 40px;
+bottom: 40px;
+background: #FFFFFF;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+}
+
+.botones {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 240px;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  
+/* Fuente */
+font-family:'poppins';
+font-style:normal;
+font-weight:400;
+font-size:16px;
+line-height:19px;
+text-align:center; 
+}
+
+#botonEncriptar {
+background:#0A3871; 
+color:#FFFFFF; 
+margin-bottom:72px; 
+margin-right:24px; 
+}
+
+#botonDesencriptar,
+#botonCopiar {
+background:#EFF1FA; 
+border:1px solid #0A3871; 
+color:#0A3871; 
+margin-bottom:72px; 
+}
+
+#botonCopiar {
+display:none; 
+position:absolute; 
+bottom:0; 
+left: 800px; 
+}
