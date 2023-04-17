@@ -58,19 +58,18 @@
 			var resultado = document.querySelector("#resultado");
 			resultado.value = encriptar(frase.value);
 			document.querySelector("#botonCopiar").style.display = 'block';
-    };
-
-    var botonDesencriptar = document.querySelector("#botonDesencriptar");
-	botonDesencriptar.onclick = function() {
-        var resultado = document.querySelector("#resultado");
-        resultado.value = desencriptar(frase.value);
-	document.querySelector("#botonCopiar").style.display = 'block';
-    };
+		};
+		var botonDesencriptar = document.querySelector("#botonDesencriptar");
+		botonDesencriptar.onclick = function() {
+			var resultado = document.querySelector("#resultado");
+			resultado.value = desencriptar(frase.value);
+			document.querySelector("#botonCopiar").style.display = 'block';
+		};
 		
 		document.getElementById("botonCopiar").addEventListener("click", function() {
 			var resultado = document.getElementById("resultado");
-      resultado.select();
-      document.execCommand("copy");
-    });
+			resultado.select();
+      			document.execCommand("copy");
+    		});
 	
 	</script>
