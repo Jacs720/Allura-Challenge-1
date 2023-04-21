@@ -24,6 +24,15 @@ body {
     background: #EFF1FA;
 }
 
+.aviso {
+    	position: absolute;
+	gap: 5px;
+	bottom: 150px;
+	left: 160px;
+	font-family:'poppins';
+	font-size:12px;
+}
+
 #resultado {
     position: absolute;
     width: 336px;
@@ -116,39 +125,46 @@ body {
 		display: block;
 		left: 45px;
 	}
-    
+	
+    	.aviso {
+		position: absolute;
+		gap: 5px;
+		bottom: 495px;
+		left: 45px;
+	}
+	
 	 .rectangulo {
-	    width: 360px;
+	    	width: 360px;
 		height: 400px;
-		top: 600px;
+		top: 580px;
 		left: 5px;
 		position: relative;
 		margin: 10px;
 		border-radius: 32px; 
-	    display: block;
+	    	display: block;
 	}
 
 	.botones {
-        width: 100%;
+        	width: 100%;
 		height: 450px;
 		left: 0px;
 		margin-left: 0px;
 		flex-direction: column;
-	    display: block;
-		top: 420px;
+	   	display: block;
+		top: 440px;
 	}
 
 	#botonCopiar {
 		left: 45px;
-		top: 570px;	
-    }
+		top: 540px;	
+    	}
     
 	#botonEncriptar {
 		margin-right: 0px;
 		margin-bottom: 30px;
-    }
+   	 }
 	
-    #resultado {
+   	#resultado {
 		top: 700px;
 		display: flex;
 		left: 45px;
