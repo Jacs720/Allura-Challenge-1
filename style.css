@@ -1,4 +1,5 @@
 body {
+    padding: 15px; 
     background-color:#EFF1FA;
 }
 
@@ -11,7 +12,7 @@ body {
     width: 680px;
     height: auto;
     max-height:500px;
-    left: 240px;
+    left: 150px;
     top: 168px;
     font-family: 'Poppins';
     font-style: normal;
@@ -26,7 +27,7 @@ body {
 #resultado {
     position: absolute;
     width: 336px;
-    height: autopx;
+    height: auto;
     max-height: 700px;
     left: 1032px;
     top: 72px;
@@ -53,26 +54,24 @@ body {
 }
 
 .botones {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 240px;
+  position: absolute;
+  bottom: 0;
+  left: -700px;
+  width: 100%;
+  text-align: center;
+  margin-left: 240px;
 }
 
 .boton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px;
-    gap: 8px;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    /* Fuente */
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  
+/* Fuente */
     font-family:'poppins';
     font-style:normal;
     font-weight:400;
@@ -100,5 +99,60 @@ body {
     display:none; 
     position:absolute; 
     bottom:0; 
-    left: 800px; 
+    left: 1500px; 
+}
+
+@media (max-width: 450px){
+/* Probado en un formato para S20 Ultra */
+	body {
+        display: block;
+		width: 450px;
+	}
+
+	#frase {
+		width: auto;
+		height: 200px;
+		margin-top: 0px; 
+		display: block;
+		left: 45px;
+	}
+    
+	 .rectangulo {
+	    width: 360px;
+		height: 400px;
+		top: 600px;
+		left: 5px;
+		position: relative;
+		margin: 10px;
+		border-radius: 32px; 
+	    display: block;
+	}
+
+	.botones {
+        width: 100%;
+		height: 450px;
+		left: 0px;
+		margin-left: 0px;
+		flex-direction: column;
+	    display: block;
+		top: 420px;
+	}
+
+	#botonCopiar {
+		left: 45px;
+		top: 570px;	
+    }
+    
+	#botonEncriptar {
+		margin-right: 0px;
+		margin-bottom: 30px;
+    }
+	
+    #resultado {
+		top: 700px;
+		display: flex;
+		left: 45px;
+		width: 300px;	
+	}
+    
 }
