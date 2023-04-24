@@ -1,8 +1,4 @@
-# Allura-Challenge-1
-Español:
-Para fines de diseño, requiere la fuente "Poppins".
+# Alura Challenge 1
 
-English:
-For design purposes, it requieres "Poppins" font.
-
+Fuente: Poppins.
 https://fonts.google.com/specimen/Poppins
