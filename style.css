@@ -63,23 +63,23 @@ body {
 }
 
 .botones {
-  position: absolute;
-  bottom: 0;
-  left: -90px;
-  width: 100%;
-  text-align: center;
-  margin-left: 240px;
-  display: inline-flex;
+ 	position: absolute;
+  	bottom: 0;
+  	left: -90px;
+  	width: 100%;
+  	text-align: center;
+  	margin-left: 240px;
+  	display: inline-flex;
 }
 
 .boton {
-  flex-direction: row;
-  align-items: center;
-  padding: 24px;
-  gap: 8px;
-  width: 328px;
-  height: 67px;
-  border-radius: 24px;
+  	flex-direction: row;
+  	align-items: center;
+  	padding: 24px;
+  	gap: 8px;
+  	width: 328px;
+  	height: 67px;
+  	border-radius: 24px;
   
 /* Fuente */
     font-family:'poppins';
@@ -109,7 +109,15 @@ body {
     display:none; 
     position:absolute; 
     bottom:0; 
-    left: 1500px; 
+    left: 890px; 
+}
+
+.botones :hover {
+	font-size: 20px;
+}
+
+.botones :active {
+	border-color: #800080;
 }
 
 @media (max-width: 450px){
