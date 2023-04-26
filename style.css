@@ -71,6 +71,7 @@ body {
   	margin-left: 240px;
   	display: inline-flex;
 	transition: 2s background;
+	cursor: pointer;
 }
 
 .boton {
