@@ -53,7 +53,7 @@ body {
 .rectangulo {
     position: absolute;
     width: 400px;
-    height: 880px;
+    height: 90%;
     left: 1000px;
     top: 40px;
     bottom: 40px;
@@ -70,6 +70,7 @@ body {
   	text-align: center;
   	margin-left: 240px;
   	display: inline-flex;
+	transition: 2s background;
 }
 
 .boton {
@@ -97,13 +98,29 @@ body {
     margin-right:24px; 
 }
 
+#botonEncriptar:hover {
+	background: #043066;
+}
+
+#botonEncriptar:active {
+	background: #12335c;
+}
+
 #botonDesencriptar,
 #botonCopiar {
     background:#EFF1FA; 
     border:1px solid #0A3871; 
     color:#0A3871; 
     margin-bottom:72px; 
+	transition: 2s background;
 }
+
+#botonDesencriptar:hover,
+#botonCopiar:hover, 
+#botonDesencriptar:hover,
+#botonCopiar:hover {
+    background: #dadef2;
+} 
 
 #botonCopiar {
     display:none; 
@@ -113,7 +130,7 @@ body {
 }
 
 .botones :hover {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .botones :active {
